@@ -1,0 +1,59 @@
+// external CSS files
+/* @import url(../css/bootstrap.css);
+@import url(../css/responsive.css); */
+
+//internal SCSS (partials)
+@import '_variables';
+@import '_mixins';
+@import '_custom-styles';
+
+//@extend .button / inherit style from .button
+
+.button-primary {
+  @include button(
+    $primary-color,
+    white
+  ); // Using the mixin with specific arguments
+}
+
+body {
+  font-size: $font-size; // Using $font-size variable
+  background-color: $primary-color; // Using $primary-color variable
+  margin: $margin; // Using $margin variable
+}
+
+.button {
+  @extend .button-primary;
+  background-color: $primary-color;
+}
+
+/* // Mixin Definition
+@mixin button($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+// Usage
+.button-primary {
+  @include button($primary-color, white);
+}
+
+.button-secondary {
+  @include button($secondary-color, white);
+} */
+
+/* 6. Functions
+SCSS functions allow you to create reusable functions that return values, such as calculations or color manipulations.
+
+scss
+Copy
+// SCSS Function
+@function calculate-rem($px-value) {
+  @return $px-value / 16px * 1rem;
+}
+
+body {
+  font-size: calculate-rem(18px);
+} */

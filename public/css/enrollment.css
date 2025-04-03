@@ -1,0 +1,80 @@
+body {
+  background-color: #fffafa;
+}
+.program-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  color: rgb(212, 212, 212);
+  background: linear-gradient(
+    to bottom left,
+    #47c5ff 0%,
+    rgb(40, 119, 184) 60%,
+    rgb(30, 69, 141) 100%
+  );
+}
+
+.program-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.upload-preview img {
+  border: 1px solid #ccc;
+  padding: 4px;
+  max-height: 120px;
+}
+
+.upload-preview .btn {
+  font-size: 0.85rem;
+}
+
+.hero-banner {
+  /* background-color: rgb(255, 166, 0); */
+  background-image: url(/public/images/campus.jpg);
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+  margin-top: 87px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: clamp(250px, 25vw, 400px);
+  margin-top: 69px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero-banner::before {
+  background: #303030;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.hero-banner h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  position: relative;
+  z-index: 200;
+}
+.hero-banner p {
+  position: relative;
+  z-index: 200;
+}
+.program-header {
+  background-image: url(/public/images/programs.jpg);
+  background-color: rgba(53, 53, 53, 0);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}

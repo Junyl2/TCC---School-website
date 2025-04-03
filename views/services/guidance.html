@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guidance & Counseling - Talisay City College</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f9f9f9;
+      }
+
+      .hero-banner {
+        background: linear-gradient(to right, rgb(255, 166, 0), #ffb347);
+        color: white;
+        padding: 70px 0;
+        text-align: center;
+      }
+
+      .hero-banner h1 {
+        font-weight: 700;
+        font-size: 2.8rem;
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-weight: 600;
+        color: #333;
+      }
+
+      .card-feature {
+        border: none;
+        border-radius: 15px;
+        padding: 25px;
+        background-color: white;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
+        transition: 0.3s;
+        height: 100%;
+      }
+
+      .card-feature:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      .card-feature i {
+        font-size: 2rem;
+        color: rgb(255, 166, 0);
+        margin-bottom: 15px;
+      }
+
+      .back-btn {
+        display: inline-block;
+        margin-top: 30px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 30px;
+        color: #777;
+        background-color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <section class="hero-banner">
+      <div class="container">
+        <h1><i class="fas fa-comments me-2"></i>Guidance & Counseling</h1>
+        <p class="lead">Your well-being and success are our top priorities.</p>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="container py-5">
+      <h2 class="section-title" data-aos="fade-up">How We Support You</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="card-feature text-center h-100">
+            <i class="fas fa-brain"></i>
+            <h5 class="fw-semibold mt-3">Personal Counseling</h5>
+            <p>
+              Confidential one-on-one sessions for emotional support, mental
+              health, and coping strategies.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-feature text-center h-100">
+            <i class="fas fa-user-graduate"></i>
+            <h5 class="fw-semibold mt-3">Academic Advising</h5>
+            <p>
+              Guidance in course selection, study skills, and time management to
+              keep you on track academically.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-feature text-center h-100">
+            <i class="fas fa-briefcase"></i>
+            <h5 class="fw-semibold mt-3">Career Development</h5>
+            <p>
+              Explore your interests and plan for future careers with workshops
+              and consultation services.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="row mt-5" data-aos="fade-up">
+        <div class="col-lg-8 mx-auto text-center">
+          <h4>Visit the Guidance Office</h4>
+          <p>Located at the Student Services Center, 2nd floor</p>
+
+          <h5 class="mt-4">Get in Touch</h5>
+          <p><i class="fas fa-envelope me-2"></i> guidance@tcc.edu.ph</p>
+          <p><i class="fas fa-phone me-2"></i> (032) 123-4567 loc 113</p>
+
+          <a href="services.html" class="btn btn-outline-secondary back-btn"
+            ><i class="fas fa-arrow-left me-2"></i>Back to Services</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer>&copy; 2025 Talisay City College. All rights reserved.</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({ duration: 800, once: true });
+    </script>
+  </body>
+</html>

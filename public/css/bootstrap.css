@@ -1,0 +1,281 @@
+:root {
+  /*  Brand Colors */
+  --color-brand-primary: rgb(255, 166, 0); /* Main school color (orange) */
+  /*   --font-family-base: 'Inter', 'Segoe UI', sans-serif; */
+  --font-family-base: 'Roboto', 'Helvetica Neue', sans-serif;
+  /* 🔤 Font Families */
+  --font-heading-primary: 'Merriweather', serif; /* For h1, h2 */
+  --font-heading-secondary: 'Inter', sans-serif; /* For h3, h4 */
+  --font-body: 'Open Sans', sans-serif; /* For p, span, list, etc. */
+  --font-ui: 'Inter', sans-serif; /* For nav, buttons, labels */
+
+  /* Backgrounds */
+  --color-background-body: #f8f9fa; /* Soft light gray for page background */
+  --color-background-section: #fff5e6; /* Light orange tint for sections */
+  --color-background-footer: #2d2d2d; /* Dark gray for footer or dark sections */
+
+  /*  Text Colors */
+  --color-text-default: #333333; /* Standard body text */
+  --color-text-muted: #777777; /* For muted text or placeholders */
+  --color-text-light: #ffffff; /* For text on dark backgrounds */
+  --color-text-nav: #1e1e1e; /* Text color for nav menu links */
+
+  /*  Heading Colors */
+  --color-heading-primary: #1e1e1e; /* Main heading color */
+  --color-heading-accent: var(--color-brand-primary); /* Accent heading color */
+
+  /*  Borders & Shadows */
+  --color-border-light: #e0e0e0; /* Light gray borders/dividers */
+  --color-shadow-light: rgba(0, 0, 0, 0.05); /* Subtle shadow effect */
+
+  /* font sizes  */
+  --font-main-size: clamp(0.85rem, 1.7vw, 1rem);
+  --font-h3-size: clamp(1.1rem, 2vw, 1.4rem);
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+/* GLOBAL STYLES
+--------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-top: 3rem;
+  color: #5a5a5a;
+  overflow-x: hidden !important;
+  background-color: var(--color-background-body) !important;
+}
+html {
+  overflow-x: hidden !important;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+  margin-top: 68px;
+}
+.carousel h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+.header-btn {
+  font-size: clamp(0.8rem, 2vw, 1rem) !important;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 4rem !important;
+  z-index: 10;
+  color: rgb(238, 235, 235) !important;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 50vh;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.carousel-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketing h2 {
+  font-weight: 400;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+
+/* Featurettes
+------------------------- */
+
+.navbar {
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed !important;
+  z-index: 1000;
+  transition: 0.4s ease-in-out;
+  background-color: var(--color-background-body);
+
+  a {
+    color: var(--color-text-nav) !important;
+    font-size: clamp(0.9rem, 1.3vw, 1rem);
+  }
+}
+.navbar li a:hover {
+  background-color: var(--color-brand-primary);
+  color: var(--color-text-nav) !important;
+}
+
+.featurette-divider {
+  margin: 5rem 0;
+}
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.05rem;
+}
+.navbar-brand {
+  padding: 0 !important;
+  margin: 0px !important;
+  color: rgb(255, 166, 0) !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  /* font-size: clamp(1.5rem, 3vw, 2rem) !important; */
+  font-size: clamp(1.5rem, 3vw, 2.7rem) !important;
+  font-weight: bold;
+
+  img {
+    height: clamp(50px, 5vw, 80px);
+  }
+}
+
+.top-form {
+  position: relative;
+}
+.fa-search {
+  color: rgb(82, 80, 80) !important;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+/*------------------------------------------------------------------
+  Footer
+-------------------------------------------------------------------*/
+.topFooter {
+  background-image: url('/public/images/footer-cover1.jpg');
+  background-color: rgba(0, 0, 0, 0);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 5%;
+
+  img {
+    height: clamp(5rem, 40vw, 10rem);
+  }
+
+  p a:hover {
+    color: #d0a772;
+  }
+
+  h3 {
+    color: #f3f3f3;
+    font-size: var(--font-h3-size);
+    border-bottom: 1px dashed rgba(207, 166, 113, 0.5);
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: var(--font-main-size);
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  .topFooterContainer {
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    position: relative;
+    z-index: 1;
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li,
+    a {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: var(--font-main-size);
+    }
+    .fb-hover:hover {
+      color: var(--color-brand-primary) !important;
+    }
+  }
+}
+
+.topFooter::before {
+  background: #181818;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.bottomFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  position: relative;
+  background-color: rgb(20, 20, 20);
+  /*   border-top: 1px dashed rgba(207, 166, 113); */
+  padding-top: 20px;
+  z-index: 1;
+
+  p,
+  a {
+    color: rgba(243, 243, 243, 0.8);
+    font-size: var(--font-main-size);
+  }
+
+  p a:hover {
+    color: #d0a772;
+  }
+}

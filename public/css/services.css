@@ -1,0 +1,82 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+}
+
+.hero-section {
+  background-image: url(/public/images/services.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: white;
+  height: clamp(250px, 25vw, 400px);
+  padding: 60px 0;
+  text-align: center;
+  margin-top: 69px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero-section::before {
+  background: #303030;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  opacity: 0.3;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  position: relative;
+  z-index: 20;
+}
+
+.hero-section p {
+  position: relative;
+  z-index: 20;
+}
+
+.service-box {
+  background: linear-gradient(
+    to bottom left,
+    #47c5ff 0%,
+    rgb(40, 119, 184) 60%,
+    rgb(30, 69, 141) 100%
+  );
+  color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: 0.3s ease;
+  height: 100%;
+}
+
+.service-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.service-box i {
+  font-size: 2.5rem;
+  color: rgb(255, 166, 0);
+  margin-bottom: 15px;
+}
+
+.service-box h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.service-box p {
+  /* color: #555; */
+  color: white;
+  font-size: 0.95rem;
+}

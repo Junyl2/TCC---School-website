@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Services - Talisay City College</title>
+    <!-- styles css -->
+    <link rel="stylesheet" href="/public/css/bootstrap.css" />
+    <link rel="stylesheet" href="/public/css/animation.css" />
+    <link rel="stylesheet" href="/public/css/custom.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f9f9f9;
+      }
+
+      .hero-banner {
+        background: linear-gradient(to right, rgb(255, 166, 0), #ffb347);
+        color: white;
+        padding: 70px 0;
+        text-align: center;
+      }
+
+      .hero-banner h1 {
+        font-weight: 700;
+        font-size: 2.8rem;
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-weight: 600;
+        color: #333;
+      }
+
+      .card-feature {
+        border: none;
+        border-radius: 15px;
+        padding: 25px;
+        background-color: white;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
+        transition: 0.3s;
+        height: 100%;
+      }
+
+      .card-feature:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      .card-feature i {
+        font-size: 2rem;
+        color: rgb(255, 166, 0);
+        margin-bottom: 15px;
+      }
+
+      .back-btn {
+        display: inline-block;
+        margin-top: 30px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 30px;
+        color: #777;
+        background-color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- navbar header-->
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top top-nav" id="nav">
+        <div class="container-fluid">
+          <h1 class="navbar-brand" href="#">
+            <img src="../public/images/tcc-logo.png" alt="" /> Talisay City
+            College
+          </h1>
+          <button
+            class="navbar-toggler hamburger-button "
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <!-- <span class="navbar-toggler-icon bg-dark"></span> -->
+             <img class="hamburger-icon " src="../public/images/menu.png" alt="">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto mb-2 mb-md-0 ml-md-4">
+              <li class="nav-item active">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-display="static"
+                  aria-expanded="false"
+                >
+                  About
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a href="#mission" class="dropdown-item">Mission & Vission</a></li>
+                  <li><a href="#objectives" class="dropdown-item">Goals & Objectives</a></li>
+                  <li><a href="#gallery" class="dropdown-item">TCC Gallery</a></li>
+                  <li><a href="#" class="dropdown-item">Third Year</a></li>
+                  <li><a href="#" class="dropdown-item">Forth Year</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-display="static"
+                  aria-expanded="false"
+                >
+                  Programs
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="../views/programs.html#program">All programs</a></li>
+                  <li><a class="dropdown-item" href="program-details/beed.html#beed">BEEd</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html#news" class="dropdown-item">Announcements</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="enrollments.html">Enrollment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Contacts</a>
+              </li>
+              </li>
+            </ul>
+
+            <form class="d-flex top-form">
+              <input
+                class="form-control mr-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <i class="fa fa-search" aria-hidden="true"></i>
+     <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Header -->
+    <section class="hero-banner">
+      <div class="container">
+        <h1><i class="fas fa-book-reader me-2"></i>Library Services</h1>
+        <p class="lead">
+          Explore, learn, and grow with our on-campus resources.
+        </p>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="container py-5">
+      <h2 class="section-title" data-aos="fade-up">What We Offer</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="card-feature text-center h-100">
+            <i class="fas fa-book"></i>
+            <h5 class="fw-semibold mt-3">Book Lending</h5>
+            <p>
+              Borrow textbooks and reference materials for your coursework and
+              projects.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-feature text-center h-100">
+            <i class="fas fa-laptop"></i>
+            <h5 class="fw-semibold mt-3">E-Resources</h5>
+            <p>
+              Access academic journals, online databases, and digital archives
+              anytime.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-feature text-center h-100">
+            <i class="fas fa-print"></i>
+            <h5 class="fw-semibold mt-3">Printing & Research</h5>
+            <p>
+              Use our facilities for printing, scanning, and guided academic
+              research.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="card-feature text-center h-100">
+            <i class="fas fa-users"></i>
+            <h5 class="fw-semibold mt-3">Study Zones</h5>
+            <p>
+              Quiet areas for focused reading, group discussions, and study
+              sessions.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="card-feature text-center h-100">
+            <i class="fas fa-headset"></i>
+            <h5 class="fw-semibold mt-3">Friendly Support</h5>
+            <p>
+              Our library staff is always ready to help you find the right
+              resources.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Library Info -->
+      <div class="row mt-5" data-aos="fade-up">
+        <div class="col-lg-8 mx-auto text-center">
+          <h4>Library Hours</h4>
+          <p>Monday – Friday, 8:00 AM to 5:00 PM</p>
+          <h5 class="mt-4">Need help?</h5>
+          <p><i class="fas fa-envelope me-2"></i> library@tcc.edu.ph</p>
+          <p><i class="fas fa-phone me-2"></i> (032) 123-4567 loc 110</p>
+          <a
+            href="/views/services.html"
+            class="btn btn-outline-secondary back-btn"
+            ><i class="fas fa-arrow-left me-2"></i>Back to Services</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <section class="topFooter row">
+        <section
+          id="aboutUs"
+          class="topFooterContainer col-lg-2 col-md-6 col-12"
+        >
+          <div class="container-fluid">
+            <h3>ABOUT US</h3>
+            <p>
+              ​Talisay City College (TCC) was established in 2004 by the local
+              government of Talisay City, Cebu, to provide quality and
+              affordable tertiary education to its residents.
+            </p>
+          </div>
+        </section>
+        <section
+          id="openingHours"
+          class="topFooterContainer col-lg-2 col-md-6 col-12"
+        >
+          <h3>OFFICE HOURS</h3>
+          <ul>
+            <li>Sunday : Closed</li>
+            <li>Mon-Wed : 8AM - 5PM</li>
+            <li>Thu-Fri : 9AM - 10PM</li>
+            <li>Sat : 8AM - 5PM</li>
+          </ul>
+        </section>
+        <section
+          id="openingHours"
+          class="topFooterContainer footer-logo col-lg-2 col-md-6 col-12"
+        >
+          <a class="text-center" href="index.html">
+            <img src="/public/images/tcc-logo.png" alt=""
+          /></a>
+          <p>Year founded 2004</p>
+        </section>
+        <section
+          id="contactInfo"
+          class="topFooterContainer col-lg-2 col-md-6 col-12"
+        >
+          <h3>CONTACT</h3>
+          <p class="">
+            V.H. Garces Street in Poblacion, Talisay City, Cebu, 6045
+          </p>
+          <p class=""><a href="#">(032) 273 8170 or (032) 272-1454</a></p>
+          <p><a href="#"> tcc.edu.ph@gmail.com</a></p>
+        </section>
+        <section
+          id="subscribe"
+          class="topFooterContainer col-lg-2 col-md-6 col-12"
+        >
+          <h3>VISIT OUR PAGE</h3>
+          <a
+            class="fb-hover"
+            href="https://web.facebook.com/TCCofficialfbpage"
+            target="_blank"
+            class="text-white text-decoration-none d-flex align-items-center justify-content-center"
+          >
+            <img
+              src="/public/images/icons/facebook.png"
+              style="height: 20px"
+              alt=""
+            />
+            <i class="ms-2">Talisay City College</i>
+          </a>
+        </section>
+      </section>
+      <section class="bottomFooter" id="bottomFooter ">
+        <p class="">
+          &copy; 2025 &middot; Talisay City College &middot; All rights
+          reserved.
+          <!-- <a href="#">Privacy</a> &middot; <a href="#">Terms</a> -->
+        </p>
+      </section>
+    </footer>
+    <!-- end of footer -->
+
+    <!-- Scroll to top button -->
+    <button
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+      class="btn btn-primary rounded-circle scroll-top-btn"
+      id="scrollBtn"
+    >
+      ↑
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="/public/js/main.js"></script>
+  </body>
+</html>

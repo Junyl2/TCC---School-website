@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.72.0" />
+    <title>Talisay City College</title>
+
+    <!-- styles css -->
+    <link rel="stylesheet" href="../public/css/bootstrap.css" />
+    <link rel="stylesheet" href="../public/css/responsive.css" />
+    <link rel="stylesheet" href="../public/css/styles.css" />
+    <link rel="stylesheet" href="../public/css/animation.css">
+    <link rel="stylesheet" href="../public/css/enrollment.css">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="../public/css/custom.css">
+
+     <!-- font awesome -->
+    <link
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+     rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top top-nav" id="nav">
+        <div class="container-fluid">
+          <h1 class="navbar-brand" href="#">
+            <img src="../public/images/tcc-logo.png" alt="" /> Talisay City
+            College
+          </h1>
+          <button
+            class="navbar-toggler hamburger-button "
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <!-- <span class="navbar-toggler-icon bg-dark"></span> -->
+             <img class="hamburger-icon " src="../public/images/menu.png" alt="">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto mb-2 mb-md-0 ml-md-4">
+              <li class="nav-item active">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-display="static"
+                  aria-expanded="false"
+                >
+                  About
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a href="#mission" class="dropdown-item">Mission & Vission</a></li>
+                  <li><a href="#objectives" class="dropdown-item">Goals & Objectives</a></li>
+                  <li><a href="#gallery" class="dropdown-item">TCC Gallery</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-display="static"
+                  aria-expanded="false"
+                >
+                  Programs
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="programs.html#program">All programs</a></li>
+                  <li><a class="dropdown-item" href="./program-details/beed.html#beed">BEEd</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#news" class="dropdown-item">Announcements</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Enrollment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Contacts</a>
+              </li>
+              </li>
+            </ul>
+
+            <form class="d-flex top-form">
+              <input
+                class="form-control mr-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <i class="fa fa-search" aria-hidden="true"></i>
+     <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="hero-banner">
+      <div class="container">
+        <h1>TCC Enrollments</h1>
+        <p class="lead">
+          Explore, learn, and grow in TCC!
+        </p>
+      </div>
+    </section>
+    <main>
+    <div class="container py-5">
+        <!-- Filters -->
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <label>Student Type</label>
+            <select class="form-select" id="filterType">
+              <option value="all">All</option>
+              <option value="new">New</option>
+              <option value="continuing">Continuing</option>
+              <option value="transferee">Transferee</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label>Course</label>
+            <select class="form-select" id="filterCourse">
+              <option value="all">All Courses</option>
+              <option value="beed">BEEd</option>
+              <option value="bsed">BSEd</option>
+              <option value="bsintech">BSInTech</option>
+              <option value="bshm">BSHM</option>
+              <option value="bshrtm">BSHRTM</option>
+              <option value="dpe">DPE</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label>Year Level</label>
+            <select class="form-select" id="filterYear">
+              <option value="all">All Years</option>
+              <option value="1st">First Year</option>
+              <option value="2nd">Second Year</option>
+              <option value="3rd">Third Year</option>
+              <option value="4th">Fourth Year</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Programs Grid -->
+        <div class="row g-4" id="programList">
+          <!-- BEEd -->
+          <div
+            class="col-md-4 program-card-wrap"
+            data-type="new continuing"
+            data-course="beed"
+            data-year="1st 2nd 3rd 4th"
+            data-aos="fade-up"
+          >
+            <div class="program-card h-100">
+              <h5>Bachelor of Elementary Education (BEEd)</h5>
+              <p>Train to become a licensed elementary school teacher.</p>
+              <button
+                class="btn btn-enroll btn-md mt-2"
+                data-bs-toggle="modal"
+                data-bs-target="#form-beed"
+              >
+                Enroll Now
+              </button>
+
+              <button
+                class="btn btn-requirements btn-md mt-2"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-beed"
+              >
+                View Requirements
+              </button>
+            </div>
+          </div>
+
+          <!-- BSEd -->
+          <div
+            class="col-md-4 program-card-wrap"
+            data-type="new continuing"
+            data-course="bsed"
+            data-year="1st 2nd 3rd 4th"
+            data-aos="fade-up"
+          >
+            <div class="program-card h-100">
+              <h5>Bachelor of Secondary Education (BSEd)</h5>
+              <p>Specialize in teaching high school students in key subjects.</p>
+              <button
+                class="btn btn-enroll btn-md mt-2"
+                data-bs-toggle="modal"
+                data-bs-target="#form-bsed"
+              >
+                Enroll Now
+              </button>
+
+              <button
+                class="btn btn-requirements btn-md mt-2"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-bsed"
+              >
+                View Requirements
+              </button>
+            </div>
+          </div>
+
+          <!-- BSInTech -->
+          <div
+            class="col-md-4 program-card-wrap"
+            data-type="new continuing transferee"
+            data-course="bsintech"
+            data-year="1st 2nd 3rd 4th"
+            data-aos="fade-up"
+          >
+            <div class="program-card h-100">
+              <h5>BS in Industrial Technology (BSInTech)</h5>
+              <p>Hands-on training in electronics and computer tech.</p>
+              <button
+                class="btn btn-enroll mt-2"
+                data-bs-toggle="modal"
+                data-bs-target="#form-bsintech"
+              >
+                Enroll Now
+              </button>
+
+              <button
+                class="btn btn-requirements mt-2"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-bsintech"
+              >
+                View Requirements
+              </button>
+            </div>
+          </div>
+
+          <!-- BSHM -->
+          <div
+            class="col-md-4 program-card-wrap"
+            data-type="new continuing transferee"
+            data-course="bshm"
+            data-year="1st 2nd 3rd 4th"
+            data-aos="fade-up"
+          >
+            <div class="program-card h-100">
+              <h5>BS in Hospitality Management (BSHM)</h5>
+              <p>Prepare for careers in hotels, tourism, and food service.</p>
+              <button
+                class="btn btn-enroll mt-2"
+                data-bs-toggle="modal"
+                data-bs-target="#form-bshm"
+              >
+                Enroll Now
+              </button>
+              <button
+                class="btn btn-requirements mt-2"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-bshm"
+              >
+                View Requirements
+              </button>
+            </div>
+          </div>
+
+          <!-- BSHRTM -->
+          <div
+            class="col-md-4 program-card-wrap"
+            data-type="new continuing transferee"
+            data-course="bshrtm"
+            data-year="1st 2nd 3rd 4th"
+            data-aos="fade-up"
+          >
+            <div class="program-card h-100">
+              <h5>BS in Hotel, Restaurant, and Tourism Management (BSHRTM)</h5>
+              <p>
+                Hospitality meets tourism in this dynamic dual-focused course.
+              </p>
+              <button
+                class="btn btn-enroll mt-2"
+                data-bs-toggle="modal"
+                data-bs-target="#form-bshrtm"
+              >
+                Enroll Now
+              </button>
+              <button
+                class="btn btn-requirements mt-2"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-bshrtm"
+              >
+                View Requirements
+              </button>
+            </div>
+          </div>
+
+          <!-- DPE -->
+          <div
+            class="col-md-4 program-card-wrap"
+            data-type="new transferee"
+            data-course="dpe"
+            data-year="1st"
+            data-aos="fade-up"
+          >
+            <div class="program-card h-100">
+              <h5>Diploma in Professional Education (DPE)</h5>
+              <p>Earn your education units to qualify for LET.</p>
+              <button
+                class="btn btn-enroll mt-2"
+                data-bs-toggle="modal"
+                data-bs-target="#form-dpe"
+              >
+                Enroll Now
+              </button>
+              <button
+                class="btn btn-requirements mt-2"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-dpe"
+              >
+                View Requirements
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- all programs requirements Modal -->
+       <!-- BEEd Modal -->
+<div class="modal fade" id="modal-beed" tabindex="-1" aria-labelledby="modalBeedLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content shadow-lg border-0 rounded-4">
+      <div class="modal-header bg-warning bg-gradient text-white rounded-top-4 px-4 py-3">
+        <h5 class="modal-title fw-bold">
+          <i class="fas fa-list-check me-2"></i>BEEd Enrollment Requirements
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body px-4 py-4">
+        <div class="mb-4">
+          <h6 class="text-primary fw-semibold"><i class="fas fa-user-graduate me-2"></i>1st Year Students</h6>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item border-0">✅ Application Form</li>
+            <li class="list-group-item border-0">✅ Form 138 (Report Card)</li>
+            <li class="list-group-item border-0">✅ PSA Birth Certificate</li>
+            <li class="list-group-item border-0">✅ Good Moral Certificate</li>
+            <li class="list-group-item border-0">✅ 2x2 ID Photos</li>
+            <li class="list-group-item border-0">✅ Entrance Exam Result</li>
+          </ul>
+        </div>
+
+        <hr class="my-4">
+
+        <div>
+          <h6 class="text-primary fw-semibold"><i class="fas fa-layer-group me-2"></i>2nd – 4th Year Students</h6>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item border-0">✅ PSA Birth Certificate <span class="text-muted small">(for transferees)</span></li>
+            <li class="list-group-item border-0">✅ Good Moral Certificate <span class="text-muted small">(for transferees)</span></li>
+            <li class="list-group-item border-0">✅ Transcript of Records (TOR) <span class="text-muted small">(for transferees)</span></li>
+            <li class="list-group-item border-0">✅ Grade Slip</li>
+            <li class="list-group-item border-0">✅ Clearance</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="modal-footer px-4 py-3">
+        <button class="btn btn-requirements" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <!-- BSEd Modal -->
+      <div
+        class="modal fade"
+        id="modal-bsed"
+        tabindex="-1"
+        aria-labelledby="modalBsedLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">BSEd Enrollment Requirements</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <ul class="list-group list-group-flush">
+                <h5>1st year students</h5>
+                <li class="list-group-item">✅ Application Form</li>
+                <li class="list-group-item">✅ Form 138 (Report Card)</li>
+                <li class="list-group-item">✅ PSA Birth Certificate</li>
+                <li class="list-group-item">✅ Good Moral Certificate</li>
+                <li class="list-group-item">✅ 2x2 Photos</li>
+                <li class="list-group-item">
+                  ✅ Entrance Exam Result
+                </li>
+                <h5>2nd - 4th year students </h5>
+                <li class="list-group-item">✅ PSA Birth Certificate <span class="text-muted">(for transferee)</span> </li>
+                <li class="list-group-item">✅ Good Moral Certificate <span class="text-muted">(for transferee)</span> </li>
+                <li class="list-group-item">✅ Transcript of Records (TOR) <span class="text-muted">(for transferee)</span> </li>
+                <li class="list-group-item">✅ Grade slip</li>
+                <li class="list-group-item">✅ Clearance</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-requirements" data-bs-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BSInTech Modal -->
+      <div
+        class="modal fade"
+        id="modal-bsintech"
+        tabindex="-1"
+        aria-labelledby="modalBsintechLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">BSInTech Enrollment Requirements</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <ul class="list-group list-group-flush">
+                <h5>1st year students</h5>
+                <li class="list-group-item">✅ Application Form</li>
+                <li class="list-group-item">✅ Form 138 (Report Card)</li>
+                <li class="list-group-item">✅ PSA Birth Certificate</li>
+                <li class="list-group-item">✅ Good Moral Certificate</li>
+                <li class="list-group-item">✅ 2x2 Photos</li>
+                <li class="list-group-item">
+                  ✅ Entrance Exam Result
+                </li>
+                <h5>2nd - 4th year students </h5>
+                <li class="list-group-item">✅ PSA Birth Certificate <span class="text-muted">(for transferee)</span> </li>
+                <li class="list-group-item">✅ Good Moral Certificate <span class="text-muted">(for transferee)</span> </li>
+                <li class="list-group-item">✅ Transcript of Records (TOR) <span class="text-muted">(for transferee)</span> </li>
+                <li class="list-group-item">✅ Grade slip</li>
+                <li class="list-group-item">✅ Clearance</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-requirements" data-bs-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BSHM Modal -->
+      <div
+        class="modal fade"
+        id="modal-bshm"
+        tabindex="-1"
+        aria-labelledby="modalBshmLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">BSHM Enrollment Requirements</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <ul class="list-group list-group-flush">
+                <h5>1st year students</h5>
+                <li class="list-group-item">✅ Application Form</li>
+                <li class="list-group-item">✅ Form 138 (Report Card)</li>
+                <li class="list-group-item">✅ PSA Birth Certificate</li>
+                <li class="list-group-item">✅ Good Moral Certificate</li>
+                <li class="list-group-item">✅ 2x2 Photos</li>
+                <li class="list-group-item">
+                  ✅ Entrance Exam Result
+                </li>
+                <h5>2nd - 4th year students </h5>
+                <li class="list-group-item">✅ PSA Birth Certificate <span class="text-muted">(for transferee)</span> </li>
+                <li class="list-group-item">✅ Good Moral Certificate <span class="text-muted">(for transferee)</span> </li>
+                <li class="list-group-item">✅ Transcript of Records (TOR) <span class="text-muted">(for transferee)</span> </li>
+                <li class="list-group-item">✅ Grade slip</li>
+                <li class="list-group-item">✅ Clearance</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-requirements" data-bs-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BSHRTM Modal -->
+      <div
+        class="modal fade"
+        id="modal-bshrtm"
+        tabindex="-1"
+        aria-labelledby="modalBshrtmLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">BSHRTM Enrollment Requirements</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <ul class="list-group list-group-flush">
+                <h5>1st year students</h5>
+                <li class="list-group-item">✅ Application Form</li>
+                <li class="list-group-item">✅ Form 138 (Report Card)</li>
+                <li class="list-group-item">✅ PSA Birth Certificate</li>
+                <li class="list-group-item">✅ Good Moral Certificate</li>
+                <li class="list-group-item">✅ 2x2 Photos</li>
+                <li class="list-group-item">
+                  ✅ Entrance Exam Result
+                </li>
+                <h5>2nd - 4th year students </h5>
+                <li class="list-group-item">✅ PSA Birth Certificate <span class="text-muted">(for transferee)</span> </li>
+                <li class="list-group-item">✅ Good Moral Certificate <span class="text-muted">(for transferee)</span> </li>
+                <li class="list-group-item">✅ Transcript of Records (TOR) <span class="text-muted">(for transferee)</span> </li>
+                <li class="list-group-item">✅ Grade slip</li>
+                <li class="list-group-item">✅ Clearance</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-requirements" data-bs-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DPE Modal -->
+      <div
+        class="modal fade"
+        id="modal-dpe"
+        tabindex="-1"
+        aria-labelledby="modalDpeLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">DPE Enrollment Requirements</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">✅ Application Form</li>
+                <li class="list-group-item">✅ College Transcript (TOR)</li>
+                <li class="list-group-item">✅ PSA Birth Certificate</li>
+                <li class="list-group-item">✅ Certificate of Good Moral</li>
+                <li class="list-group-item">✅ 2x2 ID Pictures</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-requirements" data-bs-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- enrollment modal-->
+      <!-- BEEd Modal Enrollment -->
+      <div class="modal fade" id="form-beed" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content shadow-lg border-0 rounded-4">
+            <form
+              id="enrollForm-beed"
+              action="https://formsubmit.co/youremail@example.com"
+              method="POST"
+            >
+              <div class="modal-header bg-warning bg-gradient text-white rounded-top-4 px-4 py-3">
+                <h5 class="modal-title fw-bold">
+                  <i class="fas fa-file-alt me-2"></i>Enroll in BEEd
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+
+              <div class="modal-body row g-3 px-4 py-4">
+                <input type="hidden" name="Course" value="BEEd" />
+
+                <!-- Name -->
+                <div class="col-md-6">
+                  <label class="form-label">Full Name</label>
+                  <input
+                    name="Full Name"
+                    type="text"
+                    class="form-control"
+                    placeholder="Juan Dela Cruz"
+                    required
+                  />
+                </div>
+
+                <!-- Email -->
+                <div class="col-md-6">
+                  <label class="form-label">Email</label>
+                  <input
+                    name="Email"
+                    type="email"
+                    class="form-control"
+                    placeholder="YourEmail@example.com"
+                    required
+                  />
+                </div>
+
+                <!-- Student Type -->
+                <div class="col-md-6">
+                  <label class="form-label">Student Type</label>
+                  <select
+                    id="studentType-beed"
+                    name="Student Type"
+                    class="form-select"
+                    required
+                  >
+                    <option value="">-- Select --</option>
+                    <option value="new">New</option>
+                    <option value="continuing">Continuing</option>
+                    <option value="transferee">Transferee</option>
+                  </select>
+                </div>
+
+                <!-- Year Level -->
+                <div class="col-md-6">
+                  <label class="form-label">Year Level</label>
+                  <select
+                    id="yearLevel-beed"
+                    name="Year Level"
+                    class="form-select"
+                    required
+                  >
+                    <option value="">-- Select --</option>
+                    <option>1st Year</option>
+                    <option>2nd Year</option>
+                    <option>3rd Year</option>
+                    <option>4th Year</option>
+                  </select>
+                </div>
+
+                <!-- Uploads -->
+                <div class="col-12 mt-4">
+                  <label class="form-label fw-semibold text-primary">📎 Upload Requirements</label>
+
+                  <div class="mb-3">
+                    <label class="small">PSA Birth Certificate</label>
+                    <input type="hidden" role="uploadcare-uploader" name="Birth Certificate" />
+                  </div>
+
+                  <div id="upload-grade-beed" class="mb-3 d-none">
+                    <label class="small">Grade Slip</label>
+                    <input type="hidden" role="uploadcare-uploader" name="Grade Slip" />
+                  </div>
+
+                  <div id="upload-clearance-beed" class="mb-3 d-none">
+                    <label class="small">Clearance</label>
+                    <input type="hidden" role="uploadcare-uploader" name="Clearance" />
+                  </div>
+
+                  <div id="upload-tor-beed" class="mb-3 d-none">
+                    <label class="small">Transcript of Records (TOR)</label>
+                    <input type="hidden" role="uploadcare-uploader" name="TOR" />
+                  </div>
+
+                  <div id="upload-goodmoral-beed" class="mb-3 d-none">
+                    <label class="small">Good Moral Certificate</label>
+                    <input type="hidden" role="uploadcare-uploader" name="Good Moral" />
+                  </div>
+
+                  <div class="mb-2">
+                    <label class="small">2x2 ID Photo</label>
+                    <input type="hidden" role="uploadcare-uploader" name="ID Photo" />
+                  </div>
+                </div>
+
+                <input type="hidden" name="_captcha" value="false" />
+              </div>
+
+              <div class="modal-footer px-4 py-3">
+                <button type="submit" class="btn btn-apply">Submit</button>
+                <button
+                  type="button"
+                  class="btn btn-requirements"
+                  data-bs-dismiss="modal"
+                >
+                  Cancel
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- bsed modal enrollment -->
+      <div class="modal fade" id="form-bsed" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <form
+              id="enrollForm-bsed"
+              action="https://formsubmit.co/youremail@example.com"
+              method="POST"
+            >
+              <div class="modal-header">
+                <h5 class="modal-title"> Enroll in BSEd</h5>
+                <button
+                  type="button"
+                  class="btn-close "
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+
+              <div class="modal-body row g-3 px-4">
+                <input type="hidden" name="Course" value="BSEd" />
+
+                <div class="col-md-6">
+                  <label class="form-label">Full Name</label>
+                  <input
+                    name="Full Name"
+                    type="text"
+                    class="form-control"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label">Email</label>
+                  <input
+                    name="Email"
+                    type="email"
+                    class="form-control"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label">Student Type</label>
+                  <select
+                    id="studentType-bsed"
+                    name="Student Type"
+                    class="form-select"
+                    required
+                  >
+                    <option value="">-- Select --</option>
+                    <option value="new">New</option>
+                    <option value="continuing">Continuing</option>
+                    <option value="transferee">Transferee</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label">Year Level</label>
+                  <select
+                    id="yearLevel-bsed"
+                    name="Year Level"
+                    class="form-select"
+                    required
+                  >
+                    <option value="">-- Select --</option>
+                    <option>1st Year</option>
+                    <option>2nd Year</option>
+                    <option>3rd Year</option>
+                    <option>4th Year</option>
+                  </select>
+                </div>
+
+                <div class="col-12 mt-3">
+                  <label class="form-label"> Upload Requirements:</label>
+
+                  <div class="mb-2">
+                    <label>PSA Birth Certificate</label>
+                    <input
+                      type="hidden"
+                      role="uploadcare-uploader"
+                      name="Birth Certificate"
+                    />
+                  </div>
+
+                  <div id="upload-grade-bsed" class="mb-2 d-none">
+                    <label>Grade Slip</label>
+                    <input
+                      type="hidden"
+                      role="uploadcare-uploader"
+                      name="Grade Slip"
+                    />
+                  </div>
+
+                  <div id="upload-clearance-bsed" class="mb-2 d-none">
+                    <label>Clearance</label>
+                    <input
+                      type="hidden"
+                      role="uploadcare-uploader"
+                      name="Clearance"
+                    />
+                  </div>
+
+                  <div id="upload-tor-bsed" class="mb-2 d-none">
+                    <label>Transcript of Records (TOR)</label>
+                    <input type="hidden" role="uploadcare-uploader" name="TOR" />
+                  </div>
+
+                  <div id="upload-goodmoral-bsed" class="mb-2 d-none">
+                    <label>Good Moral Certificate</label>
+                    <input
+                      type="hidden"
+                      role="uploadcare-uploader"
+                      name="Good Moral"
+                    />
+                  </div>
+
+                  <div class="mb-2">
+                    <label>2x2 ID Photo</label>
+                    <input
+                      type="hidden"
+                      role="uploadcare-uploader"
+                      name="ID Photo"
+                    />
+                  </div>
+                </div>
+
+                <input type="hidden" name="_captcha" value="false" />
+              </div>
+
+              <div class="modal-footer px-4">
+                <button type="submit" class="btn btn-success">Submit</button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cancel
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- bsit enrollment modal -->
+      <div class="modal fade" id="form-bsintech" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <form
+              id="enrollForm-bsintech"
+              action="https://formsubmit.co/youremail@example.com"
+              method="POST"
+            >
+              <div class="modal-header">
+                <h5 class="modal-title">⚙️ Enroll in BSInTech</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+
+              <div class="modal-body row g-3 px-4">
+                <input type="hidden" name="Course" value="BSInTech" />
+
+                <div class="col-md-6">
+                  <label class="form-label">Full Name</label>
+                  <input
+                    name="Full Name"
+                    type="text"
+                    class="form-control"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label">Email</label>
+                  <input
+                    name="Email"
+                    type="email"
+                    class="form-control"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label">Student Type</label>
+                  <select
+                    id="studentType-bsintech"
+                    name="Student Type"
+                    class="form-select"
+                    required
+                  >
+                    <option value="">-- Select --</option>
+                    <option value="new">New</option>
+                    <option value="continuing">Continuing</option>
+                    <option value="transferee">Transferee</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label">Year Level</label>
+                  <select
+                    id="yearLevel-bsintech"
+                    name="Year Level"
+                    class="form-select"
+                    required
+                  >
+                    <option value="">-- Select --</option>
+                    <option>1st Year</option>
+                    <option>2nd Year</option>
+                    <option>3rd Year</option>
+                    <option>4th Year</option>
+                  </select>
+                </div>
+
+                <div class="col-12 mt-3">
+                  <label class="form-label">📎 Upload Requirements:</label>
+
+                  <div class="mb-2">
+                    <label>PSA Birth Certificate</label>
+                    <input
+                      type="hidden"
+                      role="uploadcare-uploader"
+                      name="Birth Certificate"
+                    />
+                  </div>
+
+                  <div id="upload-grade-bsintech" class="mb-2 d-none">
+                    <label>Grade Slip</label>
+                    <input
+                      type="hidden"
+                      role="uploadcare-uploader"
+                      name="Grade Slip"
+                    />
+                  </div>
+
+                  <div id="upload-clearance-bsintech" class="mb-2 d-none">
+                    <label>Clearance</label>
+                    <input
+                      type="hidden"
+                      role="uploadcare-uploader"
+                      name="Clearance"
+                    />
+                  </div>
+
+                  <div id="upload-tor-bsintech" class="mb-2 d-none">
+                    <label>Transcript of Records (TOR)</label>
+                    <input type="hidden" role="uploadcare-uploader" name="TOR" />
+                  </div>
+
+                  <div id="upload-goodmoral-bsintech" class="mb-2 d-none">
+                    <label>Good Moral Certificate</label>
+                    <input
+                      type="hidden"
+                      role="uploadcare-uploader"
+                      name="Good Moral"
+                    />
+                  </div>
+
+                  <div class="mb-2">
+                    <label>2x2 ID Photo</label>
+                    <input
+                      type="hidden"
+                      role="uploadcare-uploader"
+                      name="ID Photo"
+                    />
+                  </div>
+                </div>
+
+                <input type="hidden" name="_captcha" value="false" />
+              </div>
+
+              <div class="modal-footer px-4">
+                <button type="submit" class="btn btn-success">Submit</button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cancel
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bshm modal enrollment -->
+      <div class="modal fade" id="form-bshm" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <form
+              id="enrollForm-bshm"
+              action="https://formsubmit.co/youremail@example.com"
+              method="POST"
+            >
+              <div class="modal-header">
+                <h5 class="modal-title">🏨 Enroll in BSHM</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+
+              <div class="modal-body row g-3 px-4">
+                <input type="hidden" name="Course" value="BSHM" />
+
+                <div class="col-md-6">
+                  <label class="form-label">Full Name</label>
+                  <input
+                    name="Full Name"
+                    type="text"
+                    class="form-control"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label">Email</label>
+                  <input
+                    name="Email"
+                    type="email"
+                    class="form-control"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label">Student Type</label>
+                  <select
+                    id="studentType-bshm"
+                    name="Student Type"
+                    class="form-select"
+                    required
+                  >
+                    <option value="">-- Select --</option>
+                    <option value="new">New</option>
+                    <option value="continuing">Continuing</option>
+                    <option value="transferee">Transferee</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label">Year Level</label>
+                  <select
+                    id="yearLevel-bshm"
+                    name="Year Level"
+                    class="form-select"
+                    required
+                  >
+                    <option value="">-- Select --</option>
+                    <option>1st Year</option>
+                    <option>2nd Year</option>
+                    <option>3rd Year</option>
+                    <option>4th Year</option>
+                  </select>
+                </div>
+
+                <div class="col-12 mt-3">
+                  <label class="form-label">📎 Upload Requirements:</label>
+
+                  <div class="mb-2">
+                    <label>PSA Birth Certificate</label>
+                    <input
+                      type="hidden"
+                      role="uploadcare-uploader"
+                      name="Birth Certificate"
+                    />
+                  </div>
+
+                  <div id="upload-grade-bshm" class="mb-2 d-none">
+                    <label>Grade Slip</label>
+                    <input
+                      type="hidden"
+                      role="uploadcare-uploader"
+                      name="Grade Slip"
+                    />
+                  </div>
+
+                  <div id="upload-clearance-bshm" class="mb-2 d-none">
+                    <label>Clearance</label>
+                    <input
+                      type="hidden"
+                      role="uploadcare-uploader"
+                      name="Clearance"
+                    />
+                  </div>
+
+                  <div id="upload-tor-bshm" class="mb-2 d-none">
+                    <label>Transcript of Records (TOR)</label>
+                    <input type="hidden" role="uploadcare-uploader" name="TOR" />
+                  </div>
+
+                  <div id="upload-goodmoral-bshm" class="mb-2 d-none">
+                    <label>Good Moral Certificate</label>
+                    <input
+                      type="hidden"
+                      role="uploadcare-uploader"
+                      name="Good Moral"
+                    />
+                  </div>
+
+                  <div class="mb-2">
+                    <label>2x2 ID Photo</label>
+                    <input
+                      type="hidden"
+                      role="uploadcare-uploader"
+                      name="ID Photo"
+                    />
+                  </div>
+                </div>
+
+                <input type="hidden" name="_captcha" value="false" />
+              </div>
+
+              <div class="modal-footer px-4">
+                <button type="submit" class="btn btn-success">Submit</button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cancel
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- bshrtm -->
+      <div class="modal fade" id="form-bshrtm" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <form
+              id="enrollForm-bshrtm"
+              action="https://formsubmit.co/youremail@example.com"
+              method="POST"
+            >
+              <div class="modal-header">
+                <h5 class="modal-title">🌍 Enroll in BSHRTM</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+
+              <div class="modal-body row g-3 px-4">
+                <input type="hidden" name="Course" value="BSHRTM" />
+
+                <div class="col-md-6">
+                  <label class="form-label">Full Name</label>
+                  <input
+                    name="Full Name"
+                    type="text"
+                    class="form-control"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label">Email</label>
+                  <input
+                    name="Email"
+                    type="email"
+                    class="form-control"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label">Student Type</label>
+                  <select
+                    id="studentType-bshrtm"
+                    name="Student Type"
+                    class="form-select"
+                    required
+                  >
+                    <option value="">-- Select --</option>
+                    <option value="new">New</option>
+                    <option value="continuing">Continuing</option>
+                    <option value="transferee">Transferee</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label">Year Level</label>
+                  <select
+                    id="yearLevel-bshrtm"
+                    name="Year Level"
+                    class="form-select"
+                    required
+                  >
+                    <option value="">-- Select --</option>
+                    <option>1st Year</option>
+                    <option>2nd Year</option>
+                    <option>3rd Year</option>
+                    <option>4th Year</option>
+                  </select>
+                </div>
+
+                <div class="col-12 mt-3">
+                  <label class="form-label">📎 Upload Requirements:</label>
+
+                  <div class="mb-2">
+                    <label>PSA Birth Certificate</label>
+                    <input
+                      type="hidden"
+                      role="uploadcare-uploader"
+                      name="Birth Certificate"
+                    />
+                  </div>
+
+                  <div id="upload-grade-bshrtm" class="mb-2 d-none">
+                    <label>Grade Slip</label>
+                    <input
+                      type="hidden"
+                      role="uploadcare-uploader"
+                      name="Grade Slip"
+                    />
+                  </div>
+
+                  <div id="upload-clearance-bshrtm" class="mb-2 d-none">
+                    <label>Clearance</label>
+                    <input
+                      type="hidden"
+                      role="uploadcare-uploader"
+                      name="Clearance"
+                    />
+                  </div>
+
+                  <div id="upload-tor-bshrtm" class="mb-2 d-none">
+                    <label>Transcript of Records (TOR)</label>
+                    <input type="hidden" role="uploadcare-uploader" name="TOR" />
+                  </div>
+
+                  <div id="upload-goodmoral-bshrtm" class="mb-2 d-none">
+                    <label>Good Moral Certificate</label>
+                    <input
+                      type="hidden"
+                      role="uploadcare-uploader"
+                      name="Good Moral"
+                    />
+                  </div>
+
+                  <div class="mb-2">
+                    <label>2x2 ID Photo</label>
+                    <input
+                      type="hidden"
+                      role="uploadcare-uploader"
+                      name="ID Photo"
+                    />
+                  </div>
+                </div>
+
+                <input type="hidden" name="_captcha" value="false" />
+              </div>
+
+              <div class="modal-footer px-4">
+                <button type="submit" class="btn btn-success">Submit</button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cancel
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- dpe modal enrollment -->
+      <div class="modal fade" id="form-dpe" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <form
+              id="enrollForm-dpe"
+              action="https://formsubmit.co/youremail@example.com"
+              method="POST"
+            >
+              <div class="modal-header">
+                <h5 class="modal-title">🎓 Enroll in DPE</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+
+              <div class="modal-body row g-3 px-4">
+                <input type="hidden" name="Course" value="DPE" />
+
+                <div class="col-md-6">
+                  <label class="form-label">Full Name</label>
+                  <input
+                    name="Full Name"
+                    type="text"
+                    class="form-control"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label">Email</label>
+                  <input
+                    name="Email"
+                    type="email"
+                    class="form-control"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label">Student Type</label>
+                  <select
+                    id="studentType-dpe"
+                    name="Student Type"
+                    class="form-select"
+                    required
+                  >
+                    <option value="">-- Select --</option>
+                    <option value="new">New</option>
+                    <option value="transferee">Transferee</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label">Year Level</label>
+                  <select
+                    id="yearLevel-dpe"
+                    name="Year Level"
+                    class="form-select"
+                    required
+                  >
+                    <option value="1st Year">1st Year</option>
+                  </select>
+                </div>
+
+                <div class="col-12 mt-3">
+                  <label class="form-label">📎 Upload Requirements:</label>
+
+                  <div class="mb-2">
+                    <label>College Transcript (TOR)</label>
+                    <input type="hidden" role="uploadcare-uploader" name="TOR" />
+                  </div>
+
+                  <div class="mb-2">
+                    <label>PSA Birth Certificate</label>
+                    <input
+                      type="hidden"
+                      role="uploadcare-uploader"
+                      name="Birth Certificate"
+                    />
+                  </div>
+
+                  <div id="upload-goodmoral-dpe" class="mb-2 d-none">
+                    <label>Good Moral Certificate</label>
+                    <input
+                      type="hidden"
+                      role="uploadcare-uploader"
+                      name="Good Moral"
+                    />
+                  </div>
+
+                  <div class="mb-2">
+                    <label>2x2 ID Photo</label>
+                    <input
+                      type="hidden"
+                      role="uploadcare-uploader"
+                      name="ID Photo"
+                    />
+                  </div>
+                </div>
+
+                <input type="hidden" name="_captcha" value="false" />
+              </div>
+
+              <div class="modal-footer px-4">
+                <button type="submit" class="btn btn-success">Submit</button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cancel
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+ <!-- Footer -->
+ <footer>
+  <section class="topFooter row">
+    <section id="aboutUs" class="topFooterContainer col-lg-2 col-md-6 col-12">
+      <div class="container-fluid">
+        <h3>ABOUT US</h3>
+        <p>
+          ​Talisay City College (TCC) was established in 2004 by the local
+          government of Talisay City, Cebu, to provide quality and
+          affordable tertiary education to its residents.
+        </p>
+      </div>
+    </section>
+    <section id="openingHours" class="topFooterContainer col-lg-2 col-md-6 col-12">
+      <h3>OPENING HOURS</h3>
+      <ul>
+        <li>Sunday : Closed</li>
+        <li>Mon-Wed : 8AM - 5PM</li>
+        <li>Thu-Fri : 9AM - 10PM</li>
+        <li>Sat : 8AM - 5PM</li>
+      </ul>
+    </section>
+    <section
+    id="openingHours"
+    class="topFooterContainer  col-lg-2 col-md-6 col-12"
+  >
+    <img src="/public/images/tcc-logo.png" alt="" />
+    <p class="text-center">Year founded 2004</p>
+  </section>
+    <section id="contactInfo" class="topFooterContainer col-lg-2 col-md-6 col-12">
+      <h3>CONTACT INFORMATION</h3>
+      <p class="">
+        V.H. Garces Street in Poblacion, Talisay City, Cebu, 6045
+      </p>
+      <p class=""><a href="#">(032) 273 8170 or (032) 272-1454</a></p>
+      <p><a href="#"> tcc.edu.ph@gmail.com</a></p>
+    </section>
+    <section id="subscribe" class="topFooterContainer col-lg-2 col-md-6 col-12">
+      <h3>Visit our fb page</h3>
+      <h2>Talisay City College</h2>
+    </section>
+  </section>
+  <section class="bottomFooter">
+    <p>
+      &copy; 2025 &middot; Talisay City College &middot; All rights reserved.
+      <!-- <a href="#">Privacy</a> &middot; <a href="#">Terms</a> -->
+    </p>
+  </section>
+  <!-- Scroll to top button -->
+  <button
+  onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+  class="btn btn-primary rounded-circle scroll-top-btn"
+  id="scrollBtn"
+ >
+  ↑
+ </button>
+</footer>
+<!-- end of footer -->
+<!-- Include AOS JS before closing  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+ <!-- alpha bs -->
+ <script
+ src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+ integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+ crossorigin="anonymous"
+ ></script>
+ <script
+ src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+ integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+ crossorigin="anonymous"
+ ></script>
+
+<!-- bundle bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../public/js/main.js"></script>
+<script src="/public/js/enrollment.js"></script>
+<script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+
+</body>
+</html>

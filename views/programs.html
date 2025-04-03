@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.72.0" />
+    <title>Talisay City College</title>
+
+    <!-- styles css -->
+    <link rel="stylesheet" href="../public/css/bootstrap.css" />
+    <link rel="stylesheet" href="../public/css/responsive.css" />
+    <link rel="stylesheet" href="../public/css/styles.css" />
+    <link rel="stylesheet" href="../public/css/animation.css">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="../public/css/custom.css">
+    <link rel="stylesheet" href="../public/css/programs.css">
+
+
+     <!-- font awesome -->
+    <link
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+     rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bundle bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg top-nav">
+        <div class="container-fluid">
+          <h1 class="navbar-brand" href="#">
+            <img src="../public/images/tcc-logo.png" alt="" /> Talisay City
+            College
+          </h1>
+          <button
+            class="navbar-toggler hamburger-button"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <!-- <span class="navbar-toggler-icon bg-dark"></span> -->
+             <img class="hamburger-icon" src="../public/images/menu.png" alt="">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto mb-2 mb-md-0 ml-md-4">
+              <li class="nav-item active">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-display="static"
+                  aria-expanded="false"
+                >
+                  About
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a href="index.html#mission" class="dropdown-item">Mission & Vission</a></li>
+                  <li><a href="#objectives" class="dropdown-item">Goals & Objectives</a></li>
+                  <li><a href="#gallery" class="dropdown-item">TCC Gallery</a></li>
+                  <li><a href="#" class="dropdown-item">Third Year</a></li>
+                  <li><a href="#" class="dropdown-item">Forth Year</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-display="static"
+                  aria-expanded="false"
+                >
+                  Programs
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#program">All programs</a></li>
+                  <li><a class="dropdown-item" href="/views/program-details/beed.html">BEEd</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#news" class="dropdown-item">Announcements</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="enrollments.html">Enrollment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Contacts</a>
+              </li>
+              </li>
+            </ul>
+
+            <form class="d-flex top-form">
+              <input
+                class="form-control mr-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <i class="fa fa-search" aria-hidden="true"></i>
+     <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+    <section class="py-5  text-white text-center program-header ">
+      <div class="container header-description">
+          <h1 class="display-5 fw-bold">Our Academic Programs</h1>
+          <p class="lead">
+          Shaping minds. Building futures. Choose the right path with TCC.
+          </p>
+      </div>
+      </section>
+
+      <!-- Search & Filter -->
+      <section class="bg-white py-4">
+      <div class="container text-center">
+          <input
+          type="text"
+          class="form-control search-input"
+          id="searchInput"
+          placeholder="Search for a program..."
+          />
+          <select id="filterSelect" class="form-select filter-select">
+          <option value="all">All Departments</option>
+          <option value="teacher">Teacher Education</option>
+          <option value="tech">Industrial Technology</option>
+          <option value="hospitality">Hospitality</option>
+          <option value="hrtm">HRTM</option>
+          <option value="dpe">Professional Education</option>
+          </select>
+      </div>
+      </section>
+
+      <!-- Programs Section -->
+      <section class="py-5  bg-light">
+      <div class="container">
+          <div class="row g-4" id="programList">
+            <!-- Beed department -->
+            <div
+            class="col-md-6 col-lg-4 program-item"
+            data-department="teacher"
+            data-aos="fade-up"
+        >
+            <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+                <h5 class="card-title"> Teacher Education</h5>
+                <p><strong>BEEd:</strong> The BEEd program at TCC is a pathway for aspiring elementary school teachers. </p>
+                <a
+                href="../views/program-details/beed.html#beed"
+                class="btn btn-enroll btn-md mt-2"
+                >Learn More</a
+                >
+                <button
+                class="btn btn-requirements btn-md mt-2"
+                onclick="openLightbox('../downloads/beed-curriculum.pdf')"
+                >
+                View Curriculum
+                </button>
+            </div>
+            </div>
+        </div>
+           <!-- Bsed department -->
+          <div
+              class="col-md-6 col-lg-4 program-item"
+              data-department="teacher"
+              data-aos="fade-up"
+          >
+              <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                  <h5 class="card-title"> Teacher Education</h5>
+                  <p><strong>BEEd:</strong> Teaching at the elementary level.</p>
+                  <p><strong>BSEd:</strong> Majors in:</p>
+                  <ul >
+                  <li>English</li>
+                  <li>Filipino</li>
+                  <li>Mathematics</li>
+                  <li>Social Studies</li>
+                  <li>MAPEH</li>
+                  </ul>
+                  <a
+                  href="../views/program-details/bsed.html#bsed"
+                  class="btn btn-enroll btn-md mt-2"
+                  >Learn More</a
+                  >
+                  <button
+                  class="btn btn-requirements btn-md mt-2"
+                  onclick="openLightbox('../downloads/beed-curriculum.pdf')"
+                  >
+                  View Curriculum
+                  </button>
+              </div>
+              </div>
+          </div>
+          <!-- IT department-->
+          <div
+              class="col-md-6 col-lg-4 program-item"
+              data-department="tech"
+              data-aos="fade-up"
+          >
+              <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                  <h5 class="card-title">Industrial Technology</h5>
+                  <p><strong>BSInTech:</strong>  Provides hands-on technical training with majors in:</p>
+                  <ul>
+                  <li>Computer Technology</li>
+                  <li>Electronics Technology</li>
+
+                  </ul>
+                  <a
+                  href="./views/program-details/bsit.html"
+                  class="btn btn-enroll btn-md mt-2"
+                  >Learn More</a
+                  >
+                  <button
+                  class="btn btn-requirements btn-md mt-2"
+                  onclick="openLightbox('downloads/bsit-curriculum.pdf')"
+                  >
+                  View Curriculum
+                  </button>
+              </div>
+              </div>
+          </div>
+          <!-- HM department-->
+          <div
+              class="col-md-6 col-lg-4 program-item"
+              data-department="hospitality"
+              data-aos="fade-up"
+          >
+              <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                  <h5 class="card-title"> Hospitality Management</h5>
+                  <p><strong>BSHM:</strong>  Focuses on hotel and restaurant management, preparing students for roles in the hospitality industry.</p>
+                  <a
+                  href="./views/program-details/bshm.html"
+                  class="btn btn-enroll btn-md mt-2"
+                  >Learn More</a
+                  >
+                  <button
+                  class="btn btn-requirements btn-md mt-2"
+                  onclick="openLightbox('downloads/beed-curriculum.pdf')"
+                  >
+                  View Curriculum
+                  </button>
+              </div>
+              </div>
+          </div>
+          <!-- BSHRTM department-->
+          <div
+              class="col-md-6 col-lg-4 program-item"
+              data-department="hrtm"
+              data-aos="fade-up"
+          >
+              <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                  <h5 class="card-title">Hotel, Restaurant, and Tourism Management</h5>
+                  <p><strong>BSHRTM:</strong> Offers a blend of hospitality and tourism training with majors in:</p>
+                  <ul>
+                  <li>Hotel and Restaurant Management</li>
+                  <li>Tourism Management</li>
+                  </ul>
+                  <a
+                  href="./views/program-details/beed.html"
+                  class="btn btn-enroll btn-md mt-2"
+                  >Learn More</a
+                  >
+                  <button
+                  class="btn btn-requirements btn-md mt-2"
+                  onclick="openLightbox('downloads/beed-curriculum.pdf')"
+                  >
+                  View Curriculum
+                  </button>
+              </div>
+              </div>
+          </div>
+          <!-- professional education department-->
+          <div
+              class="col-md-6 col-lg-4 program-item"
+              data-department="dpe"
+              data-aos="fade-up"
+          >
+              <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                  <h5 class="card-title"> Professional Education</h5>
+                  <p><strong>Diploma in Professional Education (DPE):</strong> For graduates needing education units to qualify for teaching board exams.</p>
+                  <a
+                  href="./views/program-details/beed.html"
+                  class="btn btn-enroll btn-md mt-2"
+                  >Learn More</a
+                  >
+                  <button
+                  class="btn btn-requirements btn-md mt-2"
+                  onclick="openLightbox('downloads/beed-curriculum.pdf')"
+                  >
+                  View Curriculum
+                  </button>
+              </div>
+              </div>
+          </div>
+          </div>
+
+          <!-- Pagination Placeholder -->
+          <div class="pagination-wrapper">
+          <nav>
+              <ul class="pagination" id="pagination"></ul>
+          </nav>
+          </div>
+      </div>
+      </section>
+
+      <!-- Lightbox for Curriculum Preview -->
+      <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+      <div class="lightbox-content">
+          <iframe id="lightboxFrame" src="" width="100%" height="500px"></iframe>
+      </div>
+      </div>
+
+      <!-- Call to Action -->
+      <section class="text-center py-4 bg-white">
+      <div class="container">
+          <h4 class="fw-semibold">Ready to take the next step?</h4>
+          <p>Visit our admissions page or get in touch with our academic office.</p>
+          <a href="admissions.html#admissions" class="btn btn-apply mt-2">Apply Now</a>
+      </div>
+      </section>
+
+        </div>
+        <!-- end of courses section -->
+    </main>
+    <!-- Footer -->
+    <footer>
+     <section class="topFooter row">
+       <section id="aboutUs" class="topFooterContainer col-lg-2 col-md-6 col-12">
+         <div class="container-fluid">
+           <h3>ABOUT US</h3>
+           <p>
+             ​Talisay City College (TCC) was established in 2004 by the local
+             government of Talisay City, Cebu, to provide quality and
+             affordable tertiary education to its residents.
+           </p>
+         </div>
+       </section>
+       <section id="openingHours" class="topFooterContainer col-lg-2 col-md-6 col-12">
+         <h3>OFFICE HOURS</h3>
+         <ul>
+           <li>Sunday : Closed</li>
+           <li>Mon-Wed : 8AM - 5PM</li>
+           <li>Thu-Fri : 9AM - 10PM</li>
+           <li>Sat : 8AM - 5PM</li>
+         </ul>
+       </section>
+       <section
+       id="openingHours"
+       class="topFooterContainer footer-logo  col-lg-2 col-md-6 col-12"
+     >
+       <a class="text-center" href="index.html">
+       <img src="/public/images/tcc-logo.png" alt="" /></a>
+       <p>Year founded 2004</p>
+     </section>
+       <section id="contactInfo" class="topFooterContainer col-lg-2 col-md-6 col-12">
+         <h3>CONTACT</h3>
+         <p class="">
+           V.H. Garces Street in Poblacion, Talisay City, Cebu, 6045
+         </p>
+         <p class=""><a href="#">(032) 273 8170 or (032) 272-1454</a></p>
+         <p><a href="#"> tcc.edu.ph@gmail.com</a></p>
+       </section>
+       <section id="subscribe" class="topFooterContainer col-lg-2 col-md-6 col-12">
+         <h3>VISIT OUR PAGE</h3>
+         <a class="fb-hover" href="https://web.facebook.com/TCCofficialfbpage" target="_blank" class="text-white text-decoration-none d-flex align-items-center justify-content-center">
+         <img src="/public/images/icons/facebook.png" style="height: 20px;" alt="">
+         <i class="ms-2">Talisay City College</i>
+         </a>
+       </section>
+     </section>
+     <section class="bottomFooter">
+       <p class="ms-2">
+         &copy; 2025 &middot; Talisay City College &middot; All rights reserved.
+         <!-- <a href="#">Privacy</a> &middot; <a href="#">Terms</a> -->
+       </p>
+     </section>
+   </footer>
+    <!-- Scroll to top button -->
+    <button
+    onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+    class="btn btn-primary rounded-circle scroll-top-btn"
+    id="scrollBtn"
+   >
+    ↑
+   </button>
+      <!-- Include AOS JS before closing  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../public/js/main.js"></script>
+    <script src="../public/js/programs.js"></script>
+  </body>
+</html>

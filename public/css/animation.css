@@ -1,0 +1,116 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.carousel-caption p,
+.carousel-caption h1,
+.carousel-caption a {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.carousel-item.active .carousel-caption p,
+.carousel-item.active .carousel-caption h1,
+.carousel-item.active .carousel-caption a {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Bootstrap dropdown */
+.dropdown-menu {
+  opacity: 0;
+  transform: translateY(-20px); /* Move slightly up before appearing */
+  transition: opacity 0.5s ease, transform 0.3s ease;
+  display: block !important;
+  visibility: hidden;
+  pointer-events: none;
+  height: 0;
+  overflow: hidden;
+}
+
+/* Show dropdown smoothly */
+.dropdown-menu.show {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  pointer-events: auto;
+  height: auto;
+}
+/* gallery hover zoom */
+.gallery-container,
+.gallery-section {
+  overflow: hidden !important;
+
+  /* gallery sections */
+}
+
+.news-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.news-container img {
+  transition: transform 0.3s ease;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.news-container img:hover {
+  transform: scale(1.1) !important;
+}
+/* Lightbox Styles */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1500;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 9999 !important;
+}
+
+/* scroll transition */
+#scrollBtn {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+}
+
+#scrollBtn.visible {
+  opacity: 1;
+  visibility: visible;
+}

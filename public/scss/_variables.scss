@@ -1,0 +1,35 @@
+// _variables.scss
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-size: 16px;
+$margin: 20px;
+
+//variables for clamp values
+$paragraph-size: clamp(1rem, 1.2vw, 1.25rem);
+$title-h1-size: clamp(2rem, 5vw, 4rem);
+$title-h2-size: clamp(1.5rem, 3vw, 3rem);
+$title-h3-size: clamp(1.25rem, 2vw, 2rem);
+$nav-link-size: clamp(1rem, 1.5vw, 1.5rem);
+$button-size: clamp(1rem, 1.5vw, 1.25rem);
+
+//tcc
+// 🎨 Brand Colors
+$color-brand-primary: rgb(255, 166, 0); // Main school color (orange)
+
+// 🌐 Backgrounds
+$color-background-body: #f9f9f9; // Soft light gray for general layout
+$color-background-section: #fff5e6; // Light orange tint for subtle branding
+$color-background-footer: #2d2d2d; // Dark gray for footer or contrast sections
+
+// 📝 Text Colors
+$color-text-default: #333333; // Standard body text
+$color-text-muted: #777777; // For less important info or placeholders
+$color-text-light: #ffffff; // For use on dark backgrounds (e.g., footer)
+
+// 📌 Titles / Headings
+$color-heading-primary: #1e1e1e; // Bold headings
+$color-heading-accent: $color-brand-primary; // Accent headings in brand color
+
+// 🧱 Borders / Dividers / Shadows
+$color-border-light: #e0e0e0;
+$color-shadow-light: rgba(0, 0, 0, 0.05);

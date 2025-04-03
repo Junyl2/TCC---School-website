@@ -1,0 +1,93 @@
+// _mixins.scss
+@mixin button($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+//Responsive Typography(clamp)
+@mixin responsive-font($min, $preferred, $max) {
+  font-size: clamp($min, $preferred, $max);
+}
+
+//Flexbox Utilities
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// Grid Utilities
+@mixin grid($columns, $gap: 1rem) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: $gap;
+}
+
+// Media Queries
+@mixin breakpoint($size) {
+  @if $size == sm {
+    @media (max-width: 640px) {
+      @content;
+    }
+  } @else if $size == md {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if $size == lg {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  } @else if $size == xl {
+    @media (max-width: 1280px) {
+      @content;
+    }
+  }
+}
+
+//Button Styles
+@mixin button($bg, $color) {
+  background-color: $bg;
+  color: $color;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: 0.3s ease;
+
+  &:hover {
+    background-color: darken($bg, 10%);
+  }
+}
+
+//Smooth Hover Transitions
+@mixin smooth-hover {
+  transition: all 0.3s ease-in-out;
+}
+
+//Animations
+@mixin fade-in($duration: 0.5s) {
+  opacity: 0;
+  animation: fadeIn $duration ease-in forwards;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

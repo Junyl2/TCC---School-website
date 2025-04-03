@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.72.0" />
+    <title>Talisay City College</title>
+
+    <link
+      rel="canonical"
+      href="https://v5.getbootstrap.com/docs/5.0/examples/carousel/"
+    />
+
+    <!-- styles css -->
+    <link rel="stylesheet" href="../public/css/bootstrap.css" />
+    <link rel="stylesheet" href="../public/css/responsive.css" />
+    <link rel="stylesheet" href="../public/css/styles.css" />
+    <link rel="stylesheet" href="../public/css/animation.css">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="../public/css/custom.css">
+
+
+     <!-- font awesome -->
+    <link
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+     rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top top-nav" id="nav">
+        <div class="container-fluid">
+          <h1 class="navbar-brand" href="#">
+            <img src="../public/images/tcc-logo.png" alt="" /> Talisay City
+            College
+          </h1>
+          <button
+            class="navbar-toggler hamburger-button "
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <!-- <span class="navbar-toggler-icon bg-dark"></span> -->
+             <img class="hamburger-icon " src="../public/images/menu.png" alt="">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto mb-2 mb-md-0 ml-md-4">
+              <li class="nav-item active">
+                <a class="nav-link" aria-current="page" href="/views/index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-display="static"
+                  aria-expanded="false"
+                >
+                  About
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a href="#mission" class="dropdown-item">Mission & Vission</a></li>
+                  <li><a href="#objectives" class="dropdown-item">Goals & Objectives</a></li>
+                  <li><a href="#gallery" class="dropdown-item">TCC Gallery</a></li>
+                  <li><a href="#" class="dropdown-item">Third Year</a></li>
+                  <li><a href="#" class="dropdown-item">Forth Year</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-display="static"
+                  aria-expanded="false"
+                >
+                  Programs
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="programs.html#program">All programs</a></li>
+                  <li><a class="dropdown-item" href="./program-details/beed.html#beed">BEEd</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-tem dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-display="static"
+                  aria-expanded="false"
+                >
+                  Enrollments
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a href="#" class="dropdown-item">First Year</a></li>
+                  <li><a href="#" class="dropdown-item">Second Year</a></li>
+                  <li><a href="#" class="dropdown-item">Third Year</a></li>
+                  <li><a href="#" class="dropdown-item">Forth Year</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Enrollment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacts</a>
+              </li>
+              </li>
+            </ul>
+
+            <form class="d-flex top-form">
+              <input
+                class="form-control mr-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <i class="fa fa-search" aria-hidden="true"></i>
+     <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+    <!-- Carousel section -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="../public/images/tcc-cover.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption text-start">
+                <h1>Welcome to <span class="tcc">Talisay City College!</span></h1>
+                <p>Empowering minds, shaping futures. Explore our programs, campus life, and opportunities to grow. Your journey to excellence starts here!</p>
+                <p><a class="btn btn-lg btn-primary header-btn" href="programs.html#program">Enroll now!</a></p>
+            </div>
+            </div>
+
+            <div class="carousel-item">
+            <img src="../public/images/tcc-cover.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+                <h1>Explore Our <span class="tcc">Programs</span>!</h1>
+                <p>Offering diverse degree programs in Education, Technology, and Hospitality. Find the right path for your future at TCC.</p>
+                <p><a class="btn btn-lg btn-primary header-btn" href="programs.html#program">View programs</a></p>
+            </div>
+            </div>
+
+            <div class="carousel-item">
+            <img src="../public/images/tcc-cover.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption text-end">
+                <h1><span class="tcc">Engage,</span> <span class="tcc text-primary">Learn,</span> <span class="tcc text-success">Succeed!</span></h1>
+                <p>Be part of a vibrant student community! Join organizations, participate in events, and build lifelong skills.</p>
+                <p><a class="btn btn-lg btn-primary header-btn" href="#gallery" id="browse-gallery">Browse gallery</a></p>
+            </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+            <!-- Student Life Section -->
+    <section class="py-5 bg-white" id="student-life">
+        <div class="container" data-aos="fade-up">
+        <h2 class="text-center fw-bold mb-5 display-5">🎓 Student Life at TCC</h2>
+
+        <!-- Clubs & Organizations -->
+        <div class="mb-5" data-aos="fade-right">
+            <h4 class="mb-4 text-primary">✨ Clubs & Organizations</h4>
+            <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card border-0 shadow-lg h-100">
+                <div class="card-body">
+                    <h5 class="card-title fw-semibold">TCC Debate Society</h5>
+                    <p class="card-text">Sharpen your public speaking skills and compete in debate tournaments across the region.</p>
+                    <span class="badge bg-secondary">Leadership</span>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow-lg h-100">
+                <div class="card-body">
+                    <h5 class="card-title fw-semibold">Tech Innovators Club</h5>
+                    <p class="card-text">Explore coding, robotics, and start-up projects through hands-on collaboration.</p>
+                    <span class="badge bg-info text-dark">Innovation</span>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow-lg h-100">
+                <div class="card-body">
+                    <h5 class="card-title fw-semibold">Hospitality Guild</h5>
+                    <p class="card-text">Plan, host, and showcase your skills in event management and customer service.</p>
+                    <span class="badge bg-warning text-dark">Hospitality</span>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Campus Events -->
+        <div class="mb-5" data-aos="fade-left">
+            <h4 class="mb-4 text-primary">🎉 Campus Events</h4>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card bg-light border-0 h-100 text-center p-4 shadow-sm">
+                <h5 class="fw-bold">🏕️ Freshmen Week</h5>
+                <p>Welcome tour, icebreakers, and orientation to help students feel at home.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-light border-0 h-100 text-center p-4 shadow-sm">
+                <h5 class="fw-bold">🎤 Cultural & Sports Fest</h5>
+                <p>Annual celebration of talent, diversity, and teamwork in TCC style.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-light border-0 h-100 text-center p-4 shadow-sm">
+                <h5 class="fw-bold">🎓 Honors & Recognition</h5>
+                <p>A special day to acknowledge top-performing and outstanding students.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div data-aos="fade-up">
+            <h4 class="mb-4 text-primary">💬 What Our Students Say</h4>
+            <div class="row g-4">
+            <div class="col-md-6">
+                <div class="d-flex bg-light p-4 rounded-4 shadow-sm align-items-start gap-3">
+                <img src="public/images/students/alyssa.jpg" class="rounded-circle border" width="60" height="60" alt="Alyssa">
+                <div>
+                    <p class="mb-2 fst-italic">“TCC gave me the confidence and skills to dream big. I love the supportive community and passionate teachers.”</p>
+                    <span class="text-muted small">— Alyssa R., BSEd Student</span>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex bg-light p-4 rounded-4 shadow-sm align-items-start gap-3">
+                <img src="public/images/students/marco.jpg" class="rounded-circle border" width="60" height="60" alt="Marco">
+                <div>
+                    <p class="mb-2 fst-italic">“Joining student organizations helped me discover my leadership skills and make lifelong friends.”</p>
+                    <span class="text-muted small">— Marco V., BSInTech Student</span>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    </main>
+    <!-- Footer -->
+    <footer>
+    <section class="topFooter row">
+        <section id="aboutUs" class="topFooterContainer col-lg-2 col-md-6 col-12">
+        <div class="container-fluid">
+            <h3>ABOUT US</h3>
+            <p>
+            ​Talisay City College (TCC) was established in 2004 by the local
+            government of Talisay City, Cebu, to provide quality and
+            affordable tertiary education to its residents.
+            </p>
+        </div>
+        </section>
+        <section id="openingHours" class="topFooterContainer col-lg-2 col-md-6 col-12">
+        <h3>OPENING HOURS</h3>
+        <ul>
+            <li>Sunday : Closed</li>
+            <li>Mon-Wed : 8AM - 5PM</li>
+            <li>Thu-Fri : 9AM - 10PM</li>
+            <li>Sat : 8AM - 5PM</li>
+        </ul>
+        </section>
+        <section
+        id="openingHours"
+        class="topFooterContainer  col-lg-2 col-md-6 col-12"
+    >
+        <img src="/public/images/tcc-logo.png" alt="" />
+        <p class="text-center">Year founded 2004</p>
+    </section>
+        <section id="contactInfo" class="topFooterContainer col-lg-2 col-md-6 col-12">
+        <h3>CONTACT INFORMATION</h3>
+        <p class="">
+            V.H. Garces Street in Poblacion, Talisay City, Cebu, 6045
+        </p>
+        <p class=""><a href="#">(032) 273 8170 or (032) 272-1454</a></p>
+        <p><a href="#"> tcc.edu.ph@gmail.com</a></p>
+        </section>
+        <section id="subscribe" class="topFooterContainer col-lg-2 col-md-6 col-12">
+        <h3>Visit our fb page</h3>
+        <h2>Talisay City College</h2>
+        </section>
+    </section>
+    <section id="bottomFooter">
+        <p>
+        &copy; 2025 &middot; Talisay City College
+        <!-- <a href="#">Privacy</a> &middot; <a href="#">Terms</a> -->
+        </p>
+        <p ><a href="#">Back to top</a></p>
+
+    </section>
+    </footer>
+<!-- end of footer -->
+<!-- Include AOS JS before closing  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script
+src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+crossorigin="anonymous"
+></script>
+<script
+src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+crossorigin="anonymous"
+></script>
+<!-- bundle bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../public/js/main.js"></script>
+<script>AOS.init({ duration: 800, once: true });</script>
+</body>
+</html>

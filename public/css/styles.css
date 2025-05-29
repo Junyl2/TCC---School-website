@@ -1,6 +1,40 @@
-/* @import url(../css/bootstrap.css);
-@import url(../css/responsive.css); */
-.button-primary, .button {
+:root {
+  /*  Brand Colors */
+  --color-brand-primary: rgb(255, 166, 0);
+
+  --font-family-base: 'Roboto', 'Helvetica Neue', sans-serif;
+  /* 🔤 Font Families */
+  --font-heading-primary: 'Merriweather', serif;
+  --font-heading-secondary: 'Inter', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+  --font-ui: 'Inter', sans-serif;
+
+  /* Backgrounds */
+  --color-background-body: #f8f9fa;
+  --color-background-section: #fff5e6;
+  --color-background-footer: #2d2d2d;
+
+  /*  Text Colors */
+  --color-text-default: #333333;
+  --color-text-muted: #777777;
+  --color-text-light: #ffffff;
+  --color-text-nav: #1e1e1e;
+
+  /*  Heading Colors */
+  --color-heading-primary: #1e1e1e;
+  --color-heading-accent: var(--color-brand-primary);
+
+  /*  Borders & Shadows */
+  --color-border-light: #e0e0e0;
+  --color-shadow-light: rgba(0, 0, 0, 0.05);
+
+  /* font sizes  */
+  --font-main-size: clamp(0.85rem, 1.7vw, 1rem);
+  --font-h3-size: clamp(1.1rem, 2vw, 1.4rem);
+}
+
+.button-primary,
+.button {
   background-color: #3498db;
   color: white;
   padding: 0.75rem 1.5rem;
@@ -8,7 +42,8 @@
   font-weight: bold;
   transition: 0.3s ease;
 }
-.button-primary:hover, .button:hover {
+.button-primary:hover,
+.button:hover {
   background-color: #217dbb;
 }
 
@@ -21,33 +56,3 @@ body {
 .button {
   background-color: #3498db;
 }
-
-/* // Mixin Definition
-@mixin button($bg-color, $text-color) {
-  background-color: $bg-color;
-  color: $text-color;
-  padding: 10px 20px;
-  border-radius: 5px;
-}
-
-// Usage
-.button-primary {
-  @include button($primary-color, white);
-}
-
-.button-secondary {
-  @include button($secondary-color, white);
-} */
-/* 6. Functions
-SCSS functions allow you to create reusable functions that return values, such as calculations or color manipulations.
-
-scss
-Copy
-// SCSS Function
-@function calculate-rem($px-value) {
-  @return $px-value / 16px * 1rem;
-}
-
-body {
-  font-size: calculate-rem(18px);
-} *//*# sourceMappingURL=styles.css.map */

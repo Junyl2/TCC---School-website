@@ -1,32 +1,32 @@
 :root {
   /*  Brand Colors */
-  --color-brand-primary: rgb(255, 166, 0); /* Main school color (orange) */
-  /*   --font-family-base: 'Inter', 'Segoe UI', sans-serif; */
+  --color-brand-primary: rgb(255, 166, 0);
+
   --font-family-base: 'Roboto', 'Helvetica Neue', sans-serif;
   /* 🔤 Font Families */
-  --font-heading-primary: 'Merriweather', serif; /* For h1, h2 */
-  --font-heading-secondary: 'Inter', sans-serif; /* For h3, h4 */
-  --font-body: 'Open Sans', sans-serif; /* For p, span, list, etc. */
-  --font-ui: 'Inter', sans-serif; /* For nav, buttons, labels */
+  --font-heading-primary: 'Merriweather', serif;
+  --font-heading-secondary: 'Inter', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+  --font-ui: 'Inter', sans-serif;
 
   /* Backgrounds */
-  --color-background-body: #f8f9fa; /* Soft light gray for page background */
-  --color-background-section: #fff5e6; /* Light orange tint for sections */
-  --color-background-footer: #2d2d2d; /* Dark gray for footer or dark sections */
+  --color-background-body: #f8f9fa;
+  --color-background-section: #fff5e6;
+  --color-background-footer: #2d2d2d;
 
   /*  Text Colors */
-  --color-text-default: #333333; /* Standard body text */
-  --color-text-muted: #777777; /* For muted text or placeholders */
-  --color-text-light: #ffffff; /* For text on dark backgrounds */
-  --color-text-nav: #1e1e1e; /* Text color for nav menu links */
+  --color-text-default: #333333;
+  --color-text-muted: #777777;
+  --color-text-light: #ffffff;
+  --color-text-nav: #1e1e1e;
 
   /*  Heading Colors */
-  --color-heading-primary: #1e1e1e; /* Main heading color */
-  --color-heading-accent: var(--color-brand-primary); /* Accent heading color */
+  --color-heading-primary: #1e1e1e;
+  --color-heading-accent: var(--color-brand-primary);
 
   /*  Borders & Shadows */
-  --color-border-light: #e0e0e0; /* Light gray borders/dividers */
-  --color-shadow-light: rgba(0, 0, 0, 0.05); /* Subtle shadow effect */
+  --color-border-light: #e0e0e0;
+  --color-shadow-light: rgba(0, 0, 0, 0.05);
 
   /* font sizes  */
   --font-main-size: clamp(0.85rem, 1.7vw, 1rem);
@@ -87,7 +87,7 @@ html {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 50vh;
+  height: 70vh;
   img {
     height: 100%;
     width: 100%;
@@ -142,15 +142,24 @@ html {
   z-index: 1000;
   transition: 0.4s ease-in-out;
   background-color: var(--color-background-body);
-
-  a {
-    color: var(--color-text-nav) !important;
-    font-size: clamp(0.9rem, 1.3vw, 1rem);
-  }
 }
-.navbar li a:hover {
-  background-color: var(--color-brand-primary);
-  color: var(--color-text-nav) !important;
+.nav-item {
+  position: relative;
+}
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease-in-out;
+  color: black !important;
+}
+.nav-link.active,
+.dropdown-item.active {
+  color: #007bff !important;
+}
+.nav-link:hover {
+  color: #007bff !important;
+}
+.dropdown-item {
+  color: black !important;
 }
 
 .featurette-divider {
@@ -170,10 +179,9 @@ html {
   /* font-size: clamp(1.5rem, 3vw, 2rem) !important; */
   font-size: clamp(1.5rem, 3vw, 2.7rem) !important;
   font-weight: bold;
-
-  img {
-    height: clamp(50px, 5vw, 80px);
-  }
+}
+.navbar-brand img {
+  height: clamp(50px, 5vw, 80px);
 }
 
 .top-form {
@@ -198,52 +206,53 @@ html {
   position: relative;
   margin: 0 auto;
   padding: 0 5%;
+}
 
-  img {
-    height: clamp(5rem, 40vw, 10rem);
-  }
+.topFooter img {
+  height: clamp(5rem, 40vw, 10rem);
+}
 
-  p a:hover {
-    color: #d0a772;
-  }
+.topFooter p a:hover {
+  color: #d0a772;
+}
 
-  h3 {
-    color: #f3f3f3;
-    font-size: var(--font-h3-size);
-    border-bottom: 1px dashed rgba(207, 166, 113, 0.5);
-    margin-bottom: 10px;
-  }
+.topFooter h3 {
+  color: #f3f3f3 !important;
+  font-size: var(--font-h3-size);
+  border-bottom: 1px dashed rgba(207, 166, 113, 0.5);
+  margin-bottom: 10px;
+}
 
-  p {
-    font-size: var(--font-main-size);
-    color: rgba(255, 255, 255, 0.8);
-    margin: 0;
-    padding-bottom: 10px;
-  }
+.topFooter p {
+  font-size: var(--font-main-size);
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  padding-bottom: 10px;
+}
 
-  .topFooterContainer {
-    text-align: center;
-    margin: auto;
-    margin-top: 5%;
-    margin-bottom: 3%;
-    position: relative;
-    z-index: 1;
+.topFooter .topFooterContainer {
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  position: relative;
+  z-index: 1;
+}
 
-    ul {
-      list-style: none;
-      padding: 0;
-    }
+.topFooter .topFooterContainer ul {
+  list-style: none;
+  padding: 0;
+}
 
-    li,
-    a {
-      text-decoration: none;
-      color: rgba(255, 255, 255, 0.8);
-      font-size: var(--font-main-size);
-    }
-    .fb-hover:hover {
-      color: var(--color-brand-primary) !important;
-    }
-  }
+.topFooter .topFooterContainer li,
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-size: var(--font-main-size);
+}
+
+.topFooter .topFooterContainer .fb-hover:hover {
+  color: var(--color-brand-primary) !important;
 }
 
 .topFooter::before {
@@ -268,14 +277,12 @@ html {
   /*   border-top: 1px dashed rgba(207, 166, 113); */
   padding-top: 20px;
   z-index: 1;
-
-  p,
-  a {
-    color: rgba(243, 243, 243, 0.8);
-    font-size: var(--font-main-size);
-  }
-
-  p a:hover {
-    color: #d0a772;
-  }
+}
+.bottomFotter p,
+a {
+  color: rgba(243, 243, 243, 0.8);
+  font-size: var(--font-main-size);
+}
+.bottomFotter p a:hover {
+  color: #d0a772;
 }

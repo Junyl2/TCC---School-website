@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
 :root {
   /*  Brand Colors */
   --color-brand-primary: rgb(255, 166, 0); /* Main school color (orange) */
@@ -382,7 +384,8 @@ html {
     rgb(170, 115, 13) 100%
   );
   color: rgb(44, 44, 44) !important;
-  font-weight: 600 !important;
+  font-weight: 500 !important;
+  font-size: clamp(0.9rem, 2vw, 1rem) !important;
 }
 .btn-enroll:hover {
   background: linear-gradient(

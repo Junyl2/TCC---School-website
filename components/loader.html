@@ -1,0 +1,71 @@
+<style>
+  #loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #loading-screen img {
+    width: 120px;
+    height: auto;
+    animation: pulse 1.5s infinite;
+  }
+
+  .spinner {
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+    border: 4px solid #3498db;
+    border-top: 4px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes pulse {
+    0%,
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.7;
+    }
+  }
+
+  body.loaded #loading-screen {
+    display: none;
+  }
+
+  body:not(.loaded) main,
+  body:not(.loaded) header,
+  body:not(.loaded) footer,
+  body:not(.loaded) .scroll-top-btn {
+    opacity: 0;
+  }
+
+  body.loaded main,
+  body.loaded header,
+  body.loaded footer,
+  body.loaded .scroll-top-btn {
+    opacity: 1;
+    transition: opacity 0.8s ease-in-out;
+  }
+</style>
+<!-- Loader -->
+<div id="loading-screen">
+  <img src="/public/images/tcc-logo.png" alt="Talisay City College Logo" />
+  <!-- <div class="spinner"></div> -->
+</div>

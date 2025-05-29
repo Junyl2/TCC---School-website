@@ -30,7 +30,6 @@ async function loadAllComponents() {
     loadComponent('navbar-placeholder', '/components/navbar.html'),
     loadComponent('home-section-placeholder', '/sections/home-section.html'),
     loadComponent('footer-placeholder', '/components/footer.html'),
-    // Add more components here as needed
   ]);
 
   // Initialize interactive scripts after components are loaded

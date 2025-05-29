@@ -7,13 +7,19 @@ body {
   padding: 20px;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  color: rgb(212, 212, 212);
+  color: rgb(255, 255, 255);
   background: linear-gradient(
-    to bottom left,
-    #47c5ff 0%,
-    rgb(40, 119, 184) 60%,
+    to left,
+    #4781ff 0%,
+    rgb(48, 133, 202) 20%,
     rgb(30, 69, 141) 100%
   );
+  /*  background: linear-gradient(
+    to bottom left,
+    #4781ff 0%,
+    rgb(40, 119, 184) 60%,
+    rgb(30, 69, 141) 100%
+  ); */
 }
 
 .program-card:hover {

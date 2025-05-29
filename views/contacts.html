@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../public/css/responsive.css" />
     <link rel="stylesheet" href="../public/css/styles.css" />
     <link rel="stylesheet" href="../public/css/animation.css" />
+    <link rel="stylesheet" href="../public/css/enrollment.css" />
     <link rel="stylesheet" href="../public/css/news.css" />
 
     <!-- Custom styles for this template -->
@@ -23,14 +24,8 @@
 
     <!-- font awesome -->
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
-    />
-
-    <!-- normalize -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
 
     <!-- Bootstrap core CSS -->
@@ -42,14 +37,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
-    <!-- <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
-      crossorigin="anonymous"
-    /> -->
-    <!-- AOS -->
+    <!-- AOS  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
@@ -57,10 +45,56 @@
   </head>
 
   <body>
-    <header id="navbar-placeholder"></header>
-    <main id="home-section-placeholder"></main>
-    <footer id="footer-placeholder"></footer>
+    <header><div id="navbar-placeholder"></div></header>
+    <main>
+      <section class="container contact-columns">
+        <div class="row text-center g-4">
+          <div class="col-md-3">
+            <div class="icon mb-2"><i class="fas fa-map-marker-alt"></i></div>
+            <h5>Address</h5>
+            <p class="mb-0">Poblacion, Talisay City</p>
+            <p>Cebu, Philippines</p>
+          </div>
+          <div class="col-md-3">
+            <div class="icon mb-2"><i class="fas fa-phone"></i></div>
+            <h5>Phone</h5>
+            <p class="mb-0">(032) 123-4567</p>
+            <p>Mon–Fri, 8am–5pm</p>
+          </div>
+          <div class="col-md-3">
+            <div class="icon mb-2"><i class="fas fa-envelope"></i></div>
+            <h5>Email</h5>
+            <p class="mb-0">
+              <a href="mailto:info@tcc.edu.ph">info@tcc.edu.ph</a>
+            </p>
+            <p>For general inquiries</p>
+          </div>
+          <div class="col-md-3">
+            <div class="icon mb-2"><i class="fab fa-facebook"></i></div>
+            <h5>Facebook</h5>
+            <p class="mb-0">
+              <a
+                href="https://web.facebook.com/TCCofficialfbpage"
+                target="_blank"
+                >/talisaycitycollege</a
+              >
+            </p>
+            <p>Send us a message</p>
+          </div>
+        </div>
 
+        <!-- Google Map -->
+        <div class="map-responsive mt-5">
+          <iframe
+            src="https://www.google.com/maps?q=Talisay%20City%20College,%20Cebu&output=embed"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer id="footer-placeholder"></footer>
     <!-- Scroll to top button -->
     <button
       onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
@@ -69,8 +103,9 @@
     >
       ↑
     </button>
-    <!-- AOS JS   -->
+    <!-- Include AOS JS before closing  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
     <!-- alpha bs -->
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
@@ -85,6 +120,5 @@
     <!-- bundle bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../public/js/main.js"></script>
-    <script src="../public/js/gallery.js"></script>
   </body>
 </html>

@@ -32,7 +32,8 @@
   list-style: none;
   font-weight: 500;
   /* color: rgb(49, 49, 49); */
-  color: rgb(212, 212, 212);
+  /*   color: rgb(212, 212, 212) !important; */
+  color: white !important;
 }
 .card-body:hover {
   transform: translateY(-5px);
